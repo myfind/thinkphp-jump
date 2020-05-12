@@ -5,7 +5,7 @@
 ## 安装
 
 ~~~php
-composer require liliuwei/thinkphp-jump
+composer require myfind/thinkphp-jump
 ~~~
 
 ## 配置
@@ -13,8 +13,8 @@ composer require liliuwei/thinkphp-jump
 // 安装之后会在config目录里生成jump.php配置文件
 return[
     // 默认跳转页面对应的模板文件
-    'dispatch_success_tmpl' => app()->getRootPath().'/vendor/liliuwei/thinkphp-jump/src/tpl/dispatch_jump.tpl',
-    'dispatch_error_tmpl'   => app()->getRootPath().'/vendor/liliuwei/thinkphp-jump/src/tpl/dispatch_jump.tpl',
+    'dispatch_success_tmpl' => app()->getRootPath().'/vendor/myfind/thinkphp-jump/src/tpl/dispatch_jump.tpl',
+    'dispatch_error_tmpl'   => app()->getRootPath().'/vendor/myfind/thinkphp-jump/src/tpl/dispatch_jump.tpl',
 ];
 ~~~
 
@@ -35,7 +35,7 @@ class Index
         //return $this->error('error');
         //return $this->success('success','index/index');
         //return $this->redirect('/admin/index/index');
-        return $this->result(['username' => 'liliuwei', 'sex' => '男']);  
+        return $this->result(['username' => 'myfind', 'sex' => '男']);  
     }
 }
 ~~~
@@ -211,9 +211,9 @@ class Index extends \app\BaseController
          * @param  array $header 发送的Header信息
          */
         //一般用法
-        return $this->result(['username' => 'liliuwei', 'sex' => '男']);
+        return $this->result(['username' => 'myfind', 'sex' => '男']);
         //完整用法
-        //return $this->result($data=['username' => 'liliuwei', 'sex' => '男'], $code = 0, $msg = '', $type = '',  $header = []); 
+        //return $this->result($data=['username' => 'myfind', 'sex' => '男'], $code = 0, $msg = '', $type = '',  $header = []); 
     }
 }
 ~~~
