@@ -1,6 +1,6 @@
 # thinkphp-jump
 
-适用于thinkphp6的跳转扩展
+适用于thinkphp6.0的跳转扩展
 
 ## 安装
 
